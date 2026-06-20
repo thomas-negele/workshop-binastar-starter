@@ -212,6 +212,8 @@ Das Projekt bringt eine lokale PostgreSQL-Datenbank als Docker-Container mit
 >   Ausgabe ohne Fehler, läuft die Runtime.
 > - **Linux:** Die Docker-Engine läuft nativ als Daemon, kein Colima nötig. Falls
 >   sie nicht läuft, mit `sudo systemctl start docker` starten.
+>
+> Installationsanleitungen für macOS und Linux: <https://docs.docker.com/compose/install/>
 
 ### 8. Container starten und verwalten
 
