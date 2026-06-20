@@ -1,0 +1,23 @@
+# Compiled output
+target/
+bin/
+*.class
+
+# Downloaded dependencies
+libs/*.jar
+
+# Eclipse-spezifisch (nicht zwingend, aber bin/ raus)
+# .project, .classpath und .settings/ bleiben drin,
+# damit das Projekt in Eclipse importierbar ist.
+
+# Docker-Daten (PostgreSQL-Volume als Bind-Mount im Projekt)
+docker-data/
+
+# Lokale Workshop-Daten (nur beim Trainer, nicht Teil des Starters)
+workshop-data/
+
+# OS
+.DS_Store
+
+# Claude Code (lokale Einstellungen)
+.claude/settings.local.json
