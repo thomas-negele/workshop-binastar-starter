@@ -102,6 +102,12 @@ origin  https://github.com/thomas-negele/workshop-binastar-starter.git (push)
 
 ### 3. Projekt in Eclipse importieren
 
+> **Wichtig:** Lege beim Start von Eclipse unbedingt einen **neuen, leeren
+> Workspace** an. Eclipse fragt direkt nach dem Workspace-Verzeichnis – gib hier
+> einen noch nicht verwendeten Ordner an (z. B. `~/eclipse-workspace-binastar`),
+> statt einen bestehenden Workspace weiterzuverwenden. So vermeiden wir Konflikte
+> mit anderen Projekten und Einstellungen und starten alle auf dem gleichen Stand.
+
 1. Eclipse starten.
 2. Im Menü **File → Import...** wählen.
 3. **General → Existing Projects into Workspace** auswählen und **Next** klicken.
@@ -308,7 +314,7 @@ Abhaken in dieser Reihenfolge:
 
 - [ ] **01:** Git geprüft oder installiert (`git --version` funktioniert)
 - [ ] **02:** Projekt in einem Ordner deiner Wahl ausgecheckt und Git-Remote geprüft (`git remote -v`)
-- [ ] **03:** Projekt in Eclipse importiert und im Package Explorer sichtbar
+- [ ] **03:** Neuen, leeren Eclipse-Workspace angelegt und Projekt importiert (im Package Explorer sichtbar)
 - [ ] **04:** Terminal deiner Wahl im Project Root geöffnet (`pwd` endet auf deinem Projektverzeichnis)
 - [ ] **05:** Basis-Tools geprüft (`curl`, `grep`, `find`, `sed`)
 - [ ] **06:** Claude Code eingerichtet und getestet (`claude` im Projekt, Frage gestellt, mit `/exit` verlassen)
