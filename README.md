@@ -83,7 +83,7 @@ angelegt.
 ```bash
 mkdir -p ~/workspace
 cd ~/workspace
-git clone git@github.com:thomas-negele/workshop-binastar-starter.git
+git clone https://github.com/thomas-negele/workshop-binastar-starter.git
 cd workshop-binastar-starter
 ```
 
@@ -96,8 +96,8 @@ git remote -v
 Das ist in Ordnung, wenn `origin` mit der Repo-URL ausgegeben wird:
 
 ```text
-origin  git@github.com:thomas-negele/workshop-binastar-starter.git (fetch)
-origin  git@github.com:thomas-negele/workshop-binastar-starter.git (push)
+origin  https://github.com/thomas-negele/workshop-binastar-starter.git (fetch)
+origin  https://github.com/thomas-negele/workshop-binastar-starter.git (push)
 ```
 
 ### 3. Projekt in Eclipse importieren
