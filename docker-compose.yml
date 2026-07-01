@@ -1,20 +1,17 @@
 services:
   postgres:
-    image: postgres:16
-    container_name: binastar-starter-postgres
-    restart: unless-stopped
+    image: postgres:15
+    container_name: workshop-db
     environment:
-      POSTGRES_DB: binastar-starter
-      POSTGRES_USER: binastar-starter
-      POSTGRES_PASSWORD: binastar-starter
+      POSTGRES_DB:       workshop
+      POSTGRES_USER:     workshop
+      POSTGRES_PASSWORD: workshop
     ports:
       - "5432:5432"
     volumes:
-      # Bind-Mount: DB-Daten liegen im Projektordner (per .gitignore ausgeschlossen),
-      # nicht im globalen Docker-Volume-Store.
-      - ./docker-data/postgres:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U binastar-starter -d binastar-starter"]
+      test: ["CMD-SHELL", "pg_isready -U workshop -d workshop"]
       interval: 5s
-      timeout: 5s
+      timeout: 3s
       retries: 5
